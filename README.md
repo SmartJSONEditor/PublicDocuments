@@ -1,2 +1,5 @@
 # PublicDocuments
-Public Documents
+
+http://www.smartjsoneditor.com
+
+Smart JSON Editor Documentation set of documents and files.
