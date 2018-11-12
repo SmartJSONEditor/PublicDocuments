@@ -94,12 +94,12 @@ var ValueTransformer = function () {
         var projectId = parameters.projectId;
         var jsonPath = parameters.jsonPath;
         
-        if (projectId == undefined || projectId == "") { return "Error-Project-id-parameter-is-undefined"; };
-        if (jsonPath == undefined || jsonPath == "") { return "Error-JSON-Path-parameter-is-undefined"; };
+        if (projectId == undefined || projectId == "") { return "Error-Project-id-parameter-is-undefined-x"; };
+        if (jsonPath == undefined || jsonPath == "") { return "Error-JSON-Path-parameter-is-undefined-x"; };
         
         var result = DocumentModel.jsonPath(projectId,jsonPath)
-        if (result == undefined) { return "Error-JSON-Path-produced-undefined-results";};
-        if (result.count == 0) { return "Error-JSON-Path-produced-0-results";};
+        if (result == undefined) { return "Error-JSON-Path-produced-undefined-results-x";};
+        if (result.count == 0) { return "Error-JSON-Path-produced-0-results-x";};
 		
 		var index = 0;
         
@@ -112,7 +112,7 @@ var ValueTransformer = function () {
         }
         
         var jsonNode = result[index];
-        if (jsonNode == undefined) {return "Error-JSON-Path-undefined-results"; }
+        if (jsonNode == undefined) {return "Error-JSON-Path-undefined-results-x"; }
         
 		var value = "";
         if (jsonNode.isContainer == 1) {

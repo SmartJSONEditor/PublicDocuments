@@ -113,7 +113,7 @@ var ValueTransformer = function () {
         if (parameters.output[1].enabled == 1) { return value; };
         if (parameters.output[2].enabled == 1) { return inputValue + value; };
         
-        return "Error";
+        return "Error-invalid-parameters-x";
 	};
 	
 	function integer(min, max) {

@@ -67,21 +67,21 @@ var ValueTransformer = function () {
 
         var propertyName = parameters.popup;
 		if (propertyName == undefined || propertyName == "") {
-            return "Error-no-parameter-value";
+            return "Error-no-parameter-value-x";
 		};
         
         var value = "";
         try {
             value = DocumentModel.getParameterValue(propertyName, userInfo.projectNode, pluginIdentifier);
         } catch (e) {
-            value = "Error-no-parameter-value-found"
+            value = "Error-no-parameter-value-found-x"
         }
 		
 		if (parameters.output[0].enabled == 1) { return value + inputValue; };
         if (parameters.output[1].enabled == 1) { return value; };
         if (parameters.output[2].enabled == 1) { return inputValue + value; };
         
-		return "Error";
+		return "Error-invalid-parameters-x";
 	};
 }
 

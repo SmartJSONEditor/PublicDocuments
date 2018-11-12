@@ -80,7 +80,8 @@ var ValueTransformer = function () {
 			type: "Text",
 			displayName: "List Values",
 			description: "List your values separated by your separator sign.",
-			defaultValue: "OptionA, OptionB, OptionC"
+			defaultValue: "OptionA, OptionB, OptionC",
+			userInfo: { hasSaveButton: true }
 		};
 
 		// Tabs
@@ -154,7 +155,6 @@ var ValueTransformer = function () {
 		if (parameters.output[2].enabled == 1) {
 			return inputValue + value;
 		}
-
 	};
 }
 

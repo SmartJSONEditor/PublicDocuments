@@ -68,21 +68,21 @@ var ValueTransformer = function () {
 
         var propertyName = parameters.popup;
 		if (propertyName == undefined || propertyName == "") {
-            return "Error-No-variable-value";
+            return "Error-no-variable-value-x";
 		};
         
         var value = "";
         try {
             value = DocumentModel.getVariableValue(propertyName, userInfo.projectNode, pluginIdentifier);
         } catch (e) {
-            value = "Error-No-variable-value-found"
+            value = "Error-no-variable-value-found-x>"
         }
 		
 		if (parameters.output[0].enabled == 1) { return value + inputValue; };
         if (parameters.output[1].enabled == 1) { return value; };
         if (parameters.output[2].enabled == 1) { return inputValue + value; };
         
-		return "Error";
+		return "Error-invalid-parameters-x";
 	};
 }
 

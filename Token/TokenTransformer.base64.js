@@ -79,7 +79,7 @@ var ValueTransformer = function () {
 		if (parameters.output[2].enabled == 1) {
 			return inputValue + value;
 		}
-		return "Error-invalid-parameters";
+		return "Error-invalid-parameters-x";
 	};
 }
 
