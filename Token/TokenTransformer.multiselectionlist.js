@@ -61,12 +61,12 @@ var ValueTransformer = function () {
 			{
 				id: "SELECT",
 				displayName: "Select",
-				parameters: [multiselectionUI]
+				parameters: [multiselectionUI, segmentsUIParam]
             },
 			{
 				id: "SETUP",
 				displayName: "Setup",
-				parameters: [multiselection, segmentsUIParam]
+				parameters: [multiselection]
             },
 		];
 

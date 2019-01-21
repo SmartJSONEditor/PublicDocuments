@@ -126,12 +126,12 @@ var ValueTransformer = function () {
 			{
 				id: "SELECT",
 				displayName: "Select",
-				parameters: [selectionUIParam, cacheUIParam]
+				parameters: [selectionUIParam, cacheUIParam, segmentsOutputUIParam]
             },
 			{
 				id: "SETUP",
 				displayName: "Setup",
-				parameters: [popupUIParam, jsonPathName, jsonPathValue, segmentsOutputUIParam]
+				parameters: [popupUIParam, jsonPathName, jsonPathValue]
             },
 		];
 

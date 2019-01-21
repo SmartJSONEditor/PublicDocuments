@@ -89,12 +89,12 @@ var ValueTransformer = function () {
 			{
 				id: "SELECT",
 				displayName: "Select",
-				parameters: [valuesUI, ]
+				parameters: [valuesUI, segmentsUIParam]
             },
 			{
 				id: "SETUP",
 				displayName: "Setup",
-				parameters: [dividedByUIParameter, booleanUIParam, textUIParam,  segmentsUIParam]
+				parameters: [dividedByUIParameter, booleanUIParam, textUIParam]
             },
 		];
 
